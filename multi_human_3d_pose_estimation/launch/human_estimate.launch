@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="multi_human" name="demo" type="demo.py" output="screen">
+		<param name="mode" type="int" value="1" />
+		<param name="model" type="str" value="human_pose_3d.pth" />
+	</node> 
+
+</launch>
