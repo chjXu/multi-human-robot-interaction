@@ -1,0 +1,10 @@
+<launch>
+  <node name="ur5_nmpc_controller"
+        pkg="ur5_nmpc_controller"
+        type="ur5_nmpc_controller_node"
+        respawn="true"
+        clear_params="true"
+        output="screen">
+    <rosparam file="$(find ur5_nmpc_controller)/config/open_params.yaml" />
+  </node>
+</launch>
