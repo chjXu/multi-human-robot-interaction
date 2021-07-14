@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find ur5_nmpc_controller)/launch/open_optimizer.launch">
+    </include>
+
+    <node pkg="ur_move_script" name="" type="sin_goal">
+    </node>
+
+    <node pkg="ur_move_script" name="" type="ur_move_pd">
+    </node>
+
+</launch>

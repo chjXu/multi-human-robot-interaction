@@ -1,0 +1,10 @@
+<launch>
+    <arg name="operator" default="nothing" doc="Mode of operator. The choose are avoidance, remote, point." />
+    <arg name="non_operator" default="nothing" doc="Mode of non-operator. The choose are avoidance." />
+
+    <node pkg="ur_move_new" type="human_robot_interaction" name="human_robot_interaction">
+        <param name="operator" type="str" value="$(arg operator)" />
+        <param name="non_operator" type="str" value="$(arg non_operator)" />
+    </node>
+
+</launch>
